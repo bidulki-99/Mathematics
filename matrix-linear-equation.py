@@ -16,11 +16,11 @@ def gauss(mat, x):
 
 n = int(input())
 
-mat1 = []
+mat = []
 for i in range(n):
-    mat1.append(list(map(int, input().split())))
-mat1.sort(key = lambda x: abs(x[0]), reverse = True)
+    mat.append(list(map(int, input().split())))
+mat.sort(key = lambda x: abs(x[0]), reverse = True)
 
-gauss(mat1, n)
-for i in mat1:
+gauss(mat, n)
+for i in mat:
     print(round(i[-1]), end = ' ')
