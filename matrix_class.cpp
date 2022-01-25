@@ -3,8 +3,8 @@ public:
     vector<vector<int>> m;
     matrix(int n = 0): m(n, vector<int>(n)) {}
     vector<int>& operator [] (int i) { return m[i]; }
-    matrix& operator += (matrix m) {return *this = *this + m; }
-    matrix& operator *= (matrix m) {return *this = *this * m; }
+    matrix& operator += (matrix m) { return *this = *this + m; }
+    matrix& operator *= (matrix m) { return *this = *this * m; }
 
     friend matrix operator + (matrix a, matrix b) {
         int n = a.m.size();
